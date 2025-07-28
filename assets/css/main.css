@@ -1644,15 +1644,25 @@ section,
 
 .portfolio .portfolio-wrap .portfolio-info .portfolio-links a {
   color: var(--contrast-color);
-  width: 40px;
+  width: auto;
+  min-width: 40px;
   height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: color-mix(in srgb, var(--accent-color), transparent 30%);
-  border-radius: 50%;
+  border-radius: 25px;
   font-size: 18px;
   transition: 0.3s;
+  padding: 0 15px;
+  text-decoration: none;
+  gap: 8px;
+}
+
+.portfolio .portfolio-wrap .portfolio-info .portfolio-links a .link-text {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .portfolio .portfolio-wrap .portfolio-info .portfolio-links a:hover {
